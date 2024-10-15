@@ -88,7 +88,7 @@
         }
         .pricing .pricing-table .pricing-header {
             position: relative;
-            background: #0e1746;
+            background: rgb(18, 38, 54);
             padding: 22px 22px;
             text-align: center;
             border-top-right-radius: 8px;
@@ -122,7 +122,7 @@
         }
         .pricing .pricing-list {
             padding: 20px 0 40px 0;
-            border: 1px solid #0e1746;
+            border: 1px solid rgb(18, 38, 54);
         }
         .pricing .pricing-list ul {
             padding: 0px;
@@ -441,8 +441,8 @@
                             <h4 class="text-white">Certification</h4>
                                 <ul class="get-in-touch-list">
                                     <li class="d-flex align-items-center py-2">
-                                        <a href="{{asset('home/extrochaincertificate.jpeg')}}">
-                                    <img src="{{asset('home/extrochaincertificate.jpeg')}}" style="width:100px;"/>
+                                        <a href="{{asset('home/certificate.jpeg')}}">
+                                    <img src="{{asset('home/certificate.jpeg')}}" style="width:100px;"/>
                                 </a>
                                     </li>
                                 </ul>
