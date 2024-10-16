@@ -18,6 +18,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Asset</th>
+                        <th>Network</th>
                         <th>Address</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -29,6 +30,7 @@
                         <tr>
                             <td>{{$coin->name}}</td>
                             <td>{{$coin->asset}}</td>
+                            <td>{{$coin->code}}</td>
                             <td>{{$coin->address}}</td>
                             <td>
                                 @switch($coin->status)
@@ -57,6 +59,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Asset</th>
+                        <th>Network</th>
                         <th>Address</th>
                         <th>Status</th>
                         <th>Action</th>

@@ -53,6 +53,7 @@ class Coins extends Controller
             'id'=>['required','numeric'],
             'name'=>['required','string'],
             'asset'=>['required','string'],
+            'network'=>['required','string'],
             'address'=>['nullable','string'],
             'status'=>['required','numeric'],
         ]);
@@ -64,7 +65,7 @@ class Coins extends Controller
 
 
         $data = [
-            'name'=>$input['name'],'asset'=>$input['asset'],'code'=>$input['asset'],
+            'name'=>$input['name'],'asset'=>$input['asset'],'code'=>$input['network'],
             'address'=>$input['address'],'status'=>$input['status'],
         ];
 
@@ -100,6 +101,7 @@ class Coins extends Controller
         $validator = Validator::make($request->input(),[
             'name'=>['required','string'],
             'asset'=>['required','string'],
+            'network'=>['required','string'],
             'address'=>['nullable','string'],
             'status'=>['required','numeric'],
         ]);
@@ -111,7 +113,7 @@ class Coins extends Controller
 
 
         $data = [
-            'name'=>$input['name'],'asset'=>$input['asset'],'code'=>$input['asset'],
+            'name'=>$input['name'],'asset'=>$input['asset'],'code'=>$input['network'],
             'address'=>$input['address'],'status'=>$input['status'],
         ];
 

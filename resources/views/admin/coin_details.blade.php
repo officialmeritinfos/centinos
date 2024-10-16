@@ -31,6 +31,11 @@
                                    value="{{$coin->asset}}" name="asset">
                         </div>
                         <div class="form-group col-md-6">
+                            <label for="inputEmail4">Network</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Name"
+                                   value="{{$coin->code}}" name="network">
+                        </div>
+                        <div class="form-group col-md-6">
                             <label for="inputEmail4">Address</label>
                             <input type="text" class="form-control" id="inputEmail4" placeholder="Address"
                                    value="{{$coin->address}}" name="address">

@@ -105,7 +105,7 @@
                     <div class="row">
                         <div class="col-xl-12 text-center text-info alert alert-primary">
                             <p>
-                                You are to send <b>{{number_format($investment->amount,2)}} of {{$investment->asset}}</b>
+                                You are to send <b>{{number_format($investment->amount,2)}} of {{$investment->asset}} on {{$investment->network}} Network</b>
                                 to the address <b style="font-size:20px;" id="address">{{$investment->wallet}}</b>.<br>
                                 After making payment, contact support for instant crediting.<br/>
 

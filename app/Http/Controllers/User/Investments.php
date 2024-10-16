@@ -61,7 +61,7 @@ class Investments extends Controller
             'amount'=>['required','numeric'],
             'account'=>['required','numeric'],
             'package'=>['required','numeric'],
-            'asset'=>['required','alpha_dash']
+            'asset'=>['required','string']
         ]);
 
         if ($validator->fails()){
@@ -71,7 +71,7 @@ class Investments extends Controller
         $input = $validator->validated();
 
         //check if the asset is supported
-        $coinExists = Coin::where('asset',strtoupper($input['asset']))->first();
+        $coinExists = Coin::where('id',$input['asset'])->first();
         if (empty($coinExists)){
             return back()->with('error','Asset is not supported');
         }
@@ -143,7 +143,7 @@ class Investments extends Controller
             'nextReturn'=>$nextReturn,'currentReturn'=>0,'returnType'=>$returnType->id,
             'numberOfReturns'=>$packageExists->numberOfReturns,'status'=>$status,'duration'=>$packageExists->Duration,
             'package'=>$packageExists->id,
-            'wallet'=>$coinExists->address,'asset'=>$coinExists->asset
+            'wallet'=>$coinExists->address,'asset'=>$coinExists->asset,'network'=>$coinExists->code
         ];
 
         $investment = Investment::create($dataInvestment);
