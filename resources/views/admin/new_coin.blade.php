@@ -27,6 +27,11 @@
                                    name="asset">
                         </div>
                         <div class="form-group col-md-6">
+                            <label for="inputEmail4">Network</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Asset"
+                                   name="network">
+                        </div>
+                        <div class="form-group col-md-6">
                             <label for="inputEmail4">Wallet Address</label>
                             <input type="text" class="form-control" id="inputEmail4" placeholder="Address"
                                    name="address">
