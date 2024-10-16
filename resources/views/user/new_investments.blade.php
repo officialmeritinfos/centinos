@@ -59,7 +59,7 @@
                                     name="asset">
                                 <option value="">Select an Asset</option>
                                 @foreach($coins as $coin)
-                                    <option value="{{$coin->asset}}">{{$coin->name}}</option>
+                                    <option value="{{$coin->id}}">{{$coin->name}}</option>
                                 @endforeach
                             </select>
                         </div>
