@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="me-auto">
-                            <p class="mb-0 text-white">Profit Balance</p>
+                            <p class="mb-0 text-white">Profit/Account Balance</p>
                             <h4 class="my-1 text-white">${{number_format($user->profit,2)}}</h4>
                             <p class="mb-0 font-13 text-white"></p>
                         </div>
